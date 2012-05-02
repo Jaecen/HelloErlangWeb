@@ -1,0 +1,18 @@
+%%-*- mode: erlang -*-
+{application, subtype_service,
+ [
+  {description, "subtype_service"},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  crypto,
+                  mochiweb,
+                  webmachine
+                 ]},
+  {mod, { subtype_service_app, []}},
+  {env, []}
+ ]}.

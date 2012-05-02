@@ -1,0 +1,9 @@
+{application,subtype_service,
+             [{description,"subtype_service"},
+              {vsn,"1"},
+              {modules,[subtype_service,subtype_service_app,
+                        subtype_service_resource,subtype_service_sup]},
+              {registered,[]},
+              {applications,[kernel,stdlib,inets,crypto,mochiweb,webmachine]},
+              {mod,{subtype_service_app,[]}},
+              {env,[]}]}.
